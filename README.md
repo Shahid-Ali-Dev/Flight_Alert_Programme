@@ -29,6 +29,33 @@ It integrates with the **Amadeus Flight API** to search for flights and supports
 
 ---
 
+## 👨‍💻Programme Structure
+
+flight-alert/
+- │
+- ├── main.py # Main program logic
+- ├── data_manager.py # Reads/writes data to Google Sheets or local storage
+- ├── flight_search.py # Handles API calls to search for flights
+- ├── notification_manager.py # Sends email alerts
+- ├── requirements.txt # Required dependencies
+- └── README.md # Project documentation
+
+---
+
+## .env Structure
+-Authorization_offers=           # Authorization token for offers API (if required by service)
+-amend_api_key=                   # Amadeus API key for flight search
+-amend_secret=                    # Amadeus API secret for authentication
+-account_sid=                     # Twilio Account SID for sending SMS alerts
+-auth_token=                      # Twilio Auth Token for SMS authentication
+-base_sheety_url=                 # Sheety API endpoint for Google Sheets data
+-api_key=                         # General API key for any additional flight APIs
+-smtp_email=                      # Email address used for sending notifications
+-smtp_password=                   # App-specific password for SMTP email service
+-twilio_from=                     # Twilio phone number to send SMS from
+-twilio_to=                       # Destination phone number to send SMS to
+
+---
 
 ## ⚙️ Setup & Installation
 
